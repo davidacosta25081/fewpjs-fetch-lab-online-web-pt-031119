@@ -1,6 +1,6 @@
 function fetchBooks() {
-  const response = await fetch('https://anapioficeandfire.com/api/books');
-  const myJson = await response.json();
+  const response = fetch('https://anapioficeandfire.com/api/books');
+  const myJson = response.json();
   renderBooks(myJson);
 
 
